@@ -1,9 +1,9 @@
 /**
  * @file fun.h
- * @author  saivikas9490
+ * @author  vinyvinnu007
  * @brief Header file for the project containing all the function definitions
  * @version 0.1
- * @date 2021-09-05
+ * @date 2021-11-12
  * 
  * @copyright Copyright (c) 2021
  * 
