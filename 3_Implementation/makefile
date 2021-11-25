@@ -3,7 +3,7 @@ TEST_PROJECT_NAME = TEST_$(PROJECT_NAME)
 
 BUILD_DIR = Build
 
-SRC=battery_data.c\
+SRC=src/battery_data.c\
 src/capacitor.c\
 src/inductor.c\
 src/paralell.c\
@@ -18,17 +18,13 @@ COV_SRC = test.c
 TEST_SRC = test/test.c\
 unity/unity.c
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 INC_H = inc
 INC_T = unity
 
-# Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
-
 # for makefile to run in both windows and linux build
 ifdef OS
-   RM = rm
+   RM = del /q
    FixPath = $(subst /,\,$1)
    EXEC = exe
 else
@@ -40,15 +36,14 @@ else
 endif
 
 # Default target built
-$(PROJECT_NAME):all
 
 .PHONY : all test coverage run clean doc
 
 all: $(SRC) $(BUILD_DIR)
-	gcc  $(INC_H) $(SRC) -o $(call FixPath,$(PROJECT_OUTPUT) 
+	gcc MainMenu.c -I $(INC_H) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) -lm 
 # to run the project
-run:$(PROJECT_NAME)
-	./$(call FixPath,$(PROJECT_OUTPUT))
+run:al
+	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 # to make the build documentation
 doc:
 	make -C doc ./documentation
