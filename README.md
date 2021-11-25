@@ -1,11 +1,14 @@
 # M1_Application_Electronicslab
 GIT INSPECTOR
 [![GitInspector](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/gitinspector.yml)
+C/C++ CI
 [![C/C++ CI](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/c_build.yml/badge.svg)](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/c_build.yml)
 
 UNITY
 [![Unit testing](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/unit_test.yml/badge.svg)](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/unit_test.yml)
+CPP_CHECK
 [![Cpp-check](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/cppcheck.yml)
+VALGRIND
 [![Valgrind](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/valgrind.yml/badge.svg)](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/valgrind.yml)
 
 CODE QUALITY
