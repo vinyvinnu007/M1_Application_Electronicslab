@@ -15,7 +15,7 @@ Folder               | Description
 `1_Requirements`     | Documents detailing requirements and research
 `2_Design`           | Documents specifying design details and architecture
 `3_Implementation`   | All code and documentation
-`4_TestPlan`         | Documents with test plans and procedures
+`4_Test_Plan`         | Documents with test plans and procedures
 
 ## Contributors List and Summary
 
