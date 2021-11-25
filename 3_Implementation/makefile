@@ -71,4 +71,4 @@ clean:
 	rmdir $(BUILD_DIR) doc/html
 	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 $(BUILD_DIR):
-	mkdir build
+	mkdir Build
