@@ -48,7 +48,7 @@ all: $(SRC) $(BUILD_DIR)
 	gcc  $(INC_H) $(SRC) -o $(call FixPath,$(PROJECT_OUTPUT) 
 # to run the project
 run:$(PROJECT_NAME)
-	./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	./$(call FixPath,$(PROJECT_OUTPUT))
 # to make the build documentation
 doc:
 	make -C doc ./documentation
