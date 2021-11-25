@@ -45,7 +45,7 @@ $(PROJECT_NAME):all
 .PHONY : all test coverage run clean doc
 
 all: $(SRC) $(BUILD_DIR)
-	gcc MainMenu.c -I $(INC_H) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) -lm
+	gcc  $(INC_H) $(SRC) -o $(call FixPath,$(PROJECT_OUTPUT) 
 # to run the project
 run:$(PROJECT_NAME)
 	./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
