@@ -3,7 +3,7 @@ TEST_PROJECT_NAME = TEST_$(PROJECT_NAME)
 
 BUILD_DIR = Build
 
-SRC = battery_data.c\
+SRC =battery_data.c\
 src/capacitor.c\
 src/inductor.c\
 src/paralell.c\
