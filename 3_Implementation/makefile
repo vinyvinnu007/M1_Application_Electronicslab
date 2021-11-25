@@ -18,8 +18,14 @@ COV_SRC = test.c
 TEST_SRC = test/test.c\
 unity/unity.c
 
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+
 INC_H = inc
 INC_T = unity
+
+# Project Output name
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+
 # for makefile to run in both windows and linux build
 ifdef OS
    RM = del /q
@@ -33,20 +39,23 @@ else
    endif
 endif
 
+# Default target built
+$(PROJECT_NAME):all
+
 .PHONY : all test coverage run clean doc
 
 all:$(SRC) $(BUILD_DIR)
 	gcc MainMenu.c -I $(INC_H) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) -lm
 # to run the project
-run: all
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+run:$(PROJECT_NAME)
+	./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 # to make the build documentation
 doc:
-	make -C doc
+	make -C doc ./documentation
 $(BUILD_DIR):
-	mkdir $(BUILD_DIR)
+	mkdir Build
 # for unit testing
-test:
+test:$(BUILD_DIR)
 	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJECT_NAME).$(EXEC)) -lm
 	./$(call FixPath,$(TEST_PROJECT_NAME).$(EXEC))
 # for CI code coverage
