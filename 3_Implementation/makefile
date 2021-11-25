@@ -28,7 +28,7 @@ PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 # for makefile to run in both windows and linux build
 ifdef OS
-   RM = del /q
+   RM = rm
    FixPath = $(subst /,\,$1)
    EXEC = exe
 else
