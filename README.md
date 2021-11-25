@@ -5,6 +5,7 @@
 [![Valgrind](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/valgrind.yml/badge.svg)](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/valgrind.yml)
 ![code_Quality score](https://api.codiga.io/project/29943/score/svg)
 ![code Grade](https://api.codiga.io/project/29943/status/svg)
+[![C/C++ CI](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/c_build.yml/badge.svg)](https://github.com/vinyvinnu007/M1_Application_Electronicslab/actions/workflows/c_build.yml)
 
 
 
