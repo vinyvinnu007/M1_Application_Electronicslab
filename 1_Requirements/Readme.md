@@ -89,10 +89,10 @@ LOW LEVEL REQUIREMENTS
 
 |ID|Description|Category|Status|
 | - | - | - | - |
-|01|The total resistance output depends on the user input.If the user doesn’t provide necessary details the intermediate function will provide the same by asking color codes|HLR1|TBD|
-|02|The life time of the input circuit will be given based upon past given data and type of battery calculation and current pull of the circuit given by the user|HLR4|TBD|
-|03|The required datasheet of types of batteries will be created to used in basic electronic circuits and same will be provided to user battery id.|HLR4|TBD|
-|04|Based on the given inductor and capacitors values of a given  circuit the impedence will be provided as output.|HLR5|TBD|
-|05|The impedence/reactance of a circuit will be calculated based on given formulas and user input|HLR5|TBD|
+|LLR01|The total resistance output depends on the user input.If the user doesn’t provide necessary details the intermediate function will provide the same by asking color codes|HLR1|TBD|
+|LLR02|The life time of the input circuit will be given based upon past given data and type of battery calculation and current pull of the circuit given by the user|HLR4|TBD|
+|LLR03|The required datasheet of types of batteries will be created to used in basic electronic circuits and same will be provided to user battery id.|HLR4|TBD|
+|LLR04|Based on the given inductor and capacitors values of a given  circuit the impedence will be provided as output.|HLR5|TBD|
+|LLR05|The impedence/reactance of a circuit will be calculated based on given formulas and user input|HLR5|TBD|
 
 
