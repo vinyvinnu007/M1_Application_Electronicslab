@@ -40,5 +40,5 @@ Feature  | Description
 2.  ### To manage time with internship and building and learning the project workflows and github 
          - The challenge was overcome by managing time and starting the day early with tutorals, looking at github accounts for  reference and coding at night after learning from various external sites.
 
-3.  ### To impleent unit test cases for the first time 
+3.  ### To implement unit test cases for the first time 
          - The challenge was overcome by watching tutorials, reffering to L&T platforms like Futureskills.
